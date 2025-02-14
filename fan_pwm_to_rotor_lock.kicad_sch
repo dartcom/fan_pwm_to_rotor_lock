@@ -736,6 +736,108 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "easyeda2kicad:1N914BWS"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1145,8 +1247,16 @@
 		(uuid "f06431b8-d37a-4e06-8ac2-bab419c2f759")
 	)
 	(no_connect
+		(at 187.96 102.87)
+		(uuid "1e9154cc-e13f-4312-8202-d6fcddf20b54")
+	)
+	(no_connect
 		(at 152.4 82.55)
 		(uuid "c1ad0421-094b-4289-9bc9-949b826ccc37")
+	)
+	(no_connect
+		(at 163.83 102.87)
+		(uuid "d3e238c9-580d-435e-9d44-35b629e77a82")
 	)
 	(wire
 		(pts
@@ -1340,7 +1450,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 59.69) (xy 59.69 59.69)
+			(xy 55.88 59.69) (xy 69.85 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1397,6 +1507,16 @@
 			(type default)
 		)
 		(uuid "64e6b5e3-4372-4f41-a572-ddae3f715cec")
+	)
+	(wire
+		(pts
+			(xy 163.83 50.8) (xy 163.83 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "672708ff-5a9b-4994-a8ea-bdaf4ea7b7e1")
 	)
 	(wire
 		(pts
@@ -1580,7 +1700,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 59.69) (xy 59.69 66.04)
+			(xy 69.85 59.69) (xy 69.85 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1637,6 +1757,91 @@
 			(type default)
 		)
 		(uuid "f9033c3d-2abe-4c8c-adc8-6b4d92e32dae")
+	)
+	(label "passthrough"
+		(at 55.88 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "90fb1c83-6ef9-41e5-aebf-43f049a8a19b")
+	)
+	(label "passthrough"
+		(at 163.83 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b87f8ef4-abb9-4f28-978c-b9aab9e306da")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0e559399-90eb-4f2a-ac9e-dd8d251e0363")
+		(property "Reference" "#PWR010"
+			(at 121.92 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 125.476 40.132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "adb36f03-6dcb-4fb0-9bbd-f704d7966a72")
+		)
+		(instances
+			(project "fan_pwm_to_rotor_lock"
+				(path "/ea79ce20-436b-47a0-b861-e37296079d12"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1805,7 +2010,7 @@
 				)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:MINISO-8_L3.0-W3.0-P0.65-LS4.9-BL"
+		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
 			(at 144.78 55.88 0)
 			(effects
 				(font
@@ -2006,6 +2211,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 163.83 100.33 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39359597-343b-42d3-961c-90baa05c2d61")
+		(property "Reference" "H1"
+			(at 166.37 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 166.37 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 163.83 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.83 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 163.83 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd31dea0-07f1-423f-a6fb-d56b6664f42d")
+		)
+		(instances
+			(project ""
+				(path "/ea79ce20-436b-47a0-b861-e37296079d12"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 90.17 88.9 0)
 		(unit 1)
@@ -2140,15 +2412,15 @@
 	(symbol
 		(lib_id "Device:R")
 		(at 72.39 48.26 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4b8721e9-f225-4473-8bd7-90251084aeb9")
 		(property "Reference" "R1"
-			(at 74.93 46.9899 0)
+			(at 74.93 49.5301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2157,7 +2429,7 @@
 			)
 		)
 		(property "Value" "4K7"
-			(at 74.93 49.5299 0)
+			(at 74.93 46.9901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2202,6 +2474,73 @@
 			(project ""
 				(path "/ea79ce20-436b-47a0-b861-e37296079d12"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 187.96 100.33 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "502cc4bd-c647-4f87-a348-6f1dba8f1912")
+		(property "Reference" "H2"
+			(at 190.5 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 190.5 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 187.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 187.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 187.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b09b7e45-6623-4e2a-a823-ec5f8b33f181")
+		)
+		(instances
+			(project "fan_pwm_to_rotor_lock"
+				(path "/ea79ce20-436b-47a0-b861-e37296079d12"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -2272,6 +2611,71 @@
 			(project ""
 				(path "/ea79ce20-436b-47a0-b861-e37296079d12"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 121.92 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6250d707-2522-49a3-be2f-aaef4eae3fa5")
+		(property "Reference" "#PWR09"
+			(at 121.92 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 125.73 28.702 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 121.92 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44268312-d98a-467a-b5cc-d3249c2e4490")
+		)
+		(instances
+			(project "fan_pwm_to_rotor_lock"
+				(path "/ea79ce20-436b-47a0-b861-e37296079d12"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -2515,7 +2919,7 @@
 				)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:MINISO-8_L3.0-W3.0-P0.65-LS4.9-BL"
+		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
 			(at 144.78 82.55 0)
 			(effects
 				(font
@@ -2602,7 +3006,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:MINISO-8_L3.0-W3.0-P0.65-LS4.9-BL"
+		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
 			(at 144.78 55.88 0)
 			(effects
 				(font
@@ -2664,7 +3068,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 66.04 0)
+		(at 69.85 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2673,7 +3077,7 @@
 		(fields_autoplaced yes)
 		(uuid "b59043b4-7736-486c-aba3-8aa804becbba")
 		(property "Reference" "#PWR08"
-			(at 59.69 72.39 0)
+			(at 69.85 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2682,7 +3086,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 71.12 0)
+			(at 69.85 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2690,7 +3094,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 66.04 0)
+			(at 69.85 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2699,7 +3103,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 66.04 0)
+			(at 69.85 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2708,7 +3112,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 66.04 0)
+			(at 69.85 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3134,6 +3538,75 @@
 			(project ""
 				(path "/ea79ce20-436b-47a0-b861-e37296079d12"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 121.92 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e934c227-fa75-4ce1-bfa3-7ce5c146b934")
+		(property "Reference" "C3"
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 114.3 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 122.8852 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 121.92 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b891368-0674-44e7-abfb-578a7ad513e3")
+		)
+		(pin "2"
+			(uuid "4800d98d-acf7-4faf-9da9-2939d0b73875")
+		)
+		(instances
+			(project "fan_pwm_to_rotor_lock"
+				(path "/ea79ce20-436b-47a0-b861-e37296079d12"
+					(reference "C3")
 					(unit 1)
 				)
 			)
